@@ -16,7 +16,7 @@ class Air : public Module{
         void on_gcode_execute(void* argument);
 
     private:
-        Pwm *air_pin;    // Air output pin
+        Pwm air_pin;
         struct {
             bool air_on:1;     // Air status
         };
